@@ -1,0 +1,63 @@
+.register {
+  background-color: rgb(37, 175, 19);
+  padding: 5%;
+  margin: 10%;
+  align-items: center;
+
+  border-radius: 10px;
+}
+.register label {
+  color: white;
+  font-size: xx-large;
+  margin-left: 1em;
+}
+
+.register input[type="text"],
+input[type="password"],
+input[type="email"] {
+  background-color: rgb(232, 235, 238);
+  width: 100%;
+  margin: 25px 0;
+  padding: 15px 0;
+  font-size: xx-large;
+  border: none;
+  border-radius: 10px;
+}
+
+.register input[type="submit"] {
+  width: 100%;
+  padding: 16px 20px;
+  margin: 15px 0;
+  font-size: xx-large;
+  border-radius: 10px;
+  border: none;
+  color: rgb(37, 175, 19);
+  font-weight: bolder;
+  font-size: 3rem;
+  background-color: rgb(66, 61, 61);
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.register input[type="submit"]:hover {
+  opacity: 0.8;
+}
+.register h1 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+.register_login {
+  text-align: center;
+}
+.register_login p {
+  color: white;
+  font-size: xx-large;
+}
+.register_login a {
+  color: rgb(73, 75, 190);
+}
+
+.register_hr {
+  border: 1px solid white;
+  margin-bottom: 25px;
+}
