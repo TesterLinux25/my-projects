@@ -22,7 +22,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     // var_dump($user);
 
     $result=mysqli_query($conn, $sql);
-    var_dump($result);
+   // var_dump($result);
 
     if(mysqli_num_rows($result)===1){
         $user=mysqli_fetch_assoc($result);
@@ -34,7 +34,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
              exit;
         }else{
             $error= " Invalid username or password";
-            echo $username, $password;
+            
         }
     }else{
         echo " User not found";

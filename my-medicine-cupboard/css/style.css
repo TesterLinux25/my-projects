@@ -14,7 +14,9 @@
 
 .register input[type="text"],
 input[type="password"],
-input[type="email"] {
+input[type="email"],
+input[type="number"],
+input[type="date"] {
   background-color: rgb(232, 235, 238);
   width: 100%;
   margin: 25px 0;
@@ -34,7 +36,7 @@ input[type="email"] {
   color: rgb(37, 175, 19);
   font-weight: bolder;
   font-size: 3rem;
-  background-color: rgb(66, 61, 61);
+  background-color: rgb(56, 25, 25);
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -60,4 +62,116 @@ input[type="email"] {
 .register_hr {
   border: 1px solid white;
   margin-bottom: 25px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  /* border: 1px solid #dddddd;*/
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #2eb466;
+}
+a {
+  text-decoration: none;
+}
+/*admin*/
+.admin,
+.edit {
+  background-color: rgb(37, 175, 19);
+  padding: 5%;
+  margin: 2%;
+  align-items: center;
+
+  border-radius: 10px;
+}
+table {
+  background-color: green;
+  border-radius: 10px;
+}
+.admin button,
+input[type="submit"] {
+  width: 100%;
+  padding: 16px 20px;
+  margin: 15px 0;
+  font-size: xx-large;
+  border-radius: 10px;
+  border: none;
+  color: rgb(37, 175, 19);
+  font-weight: bolder;
+  font-size: 1rem;
+  background-color: rgb(56, 25, 25);
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.admin input[type="submit"]:hover {
+  opacity: 0.8;
+}
+.admin button:hover {
+  opacity: 0.8;
+}
+.admin a {
+  font-size: 2rem;
+}
+/*edit*/
+.edit button,
+input[type="submit"] {
+  width: 100%;
+  padding: 16px 20px;
+  margin: 15px 0;
+  font-size: xx-large;
+  border-radius: 10px;
+  border: none;
+  color: rgb(37, 175, 19);
+  font-weight: bolder;
+  font-size: 1rem;
+  background-color: rgb(56, 25, 25);
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.edit input[type="submit"]:hover {
+  opacity: 0.8;
+}
+.edit button:hover {
+  opacity: 0.8;
+}
+.edit input[type="text"],
+input[type="number"],
+input[type="date"] {
+  background-color: rgb(232, 235, 238);
+  width: 100%;
+  margin: 25px 0;
+  padding: 15px 0;
+  font-size: xx-large;
+  border: none;
+  border-radius: 10px;
+}
+.title {
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+}
+/*admin and edit bottom buttons*/
+.anotherbutton {
+  display: flex;
+  justify-content: space-around;
+}
+.anotherbutton a {
+  font-size: 2rem;
+  padding: 1rem 8rem;
+  background-color: rgb(56, 25, 25);
+  color: rgb(37, 175, 19);
+  border-radius: 10px;
+  justify-content: space-around;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.anotherbutton a:hover {
+  opacity: 0.8;
 }
