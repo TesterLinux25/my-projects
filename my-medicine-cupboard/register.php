@@ -26,7 +26,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             if(mysqli_query($conn, $sql)){
                 $_SESSION['logged_in']=true;
                 $_SESSION['username']=$username;
-                header("Location: admin.php");
+                $_SESSION['id']=$user['id'];
+                header("Location: logout.php");
                  exit;
             }else{
                 $error= "SOMETHING HAPPENED not data inserted" . mysqli_error($conn);

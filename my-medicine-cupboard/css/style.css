@@ -63,6 +63,7 @@ input[type="date"] {
   border: 1px solid white;
   margin-bottom: 25px;
 }
+/*admin*/
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -96,7 +97,7 @@ table {
   background-color: green;
   border-radius: 10px;
 }
-.admin button,
+.table_form button,
 input[type="submit"] {
   width: 100%;
   padding: 16px 20px;
@@ -119,6 +120,26 @@ input[type="submit"] {
 }
 .admin a {
   font-size: 2rem;
+}
+.search_input {
+  background-color: rgb(232, 235, 238);
+  width: 100%;
+  padding: 15px 0;
+  font-size: xx-large;
+  border: none;
+  border-radius: 25px 0px 0px 25px;
+}
+.search_form {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 0;
+}
+.search_form button {
+  background-color: rgb(56, 25, 25);
+  padding: 15px 50px;
+  color: rgb(37, 175, 19);
+  font-size: 2rem;
+  border-radius: 0 25px 25px 0px;
 }
 /*edit*/
 .edit button,
@@ -147,7 +168,7 @@ input[type="number"],
 input[type="date"] {
   background-color: rgb(232, 235, 238);
   width: 100%;
-  margin: 25px 0;
+  margin: 15px 0;
   padding: 15px 0;
   font-size: xx-large;
   border: none;

@@ -3,13 +3,15 @@ include 'partials/header.php';
 
 ///list a table from database
 $unu=$_SESSION['username'];
+$doi=$_SESSION['id'];
 
 $searchName='Otrivine';
 //$sql="SELECT * FROM medicins  INNER JOIN users ON users.id=medicins.id_username WHERE username='$unu' AND name_m='$searchName'";
 $sql="SELECT * FROM medicins  INNER JOIN users ON users.id=medicins.id_username WHERE username='$unu'";
 $result=mysqli_query($conn, $sql);
 $testt=mysqli_fetch_assoc($result);
-//echo $testt['id'];
+
+echo $doi;
 $error ="";
 if($_SERVER["REQUEST_METHOD"]=="POST"){
    $trei=$testt['id'];
@@ -21,7 +23,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
      //echo $name_m.' '.$quantity.' '.$notes.' '.$date;
     
-     $sql2="INSERT INTO medicins ( id_username, name_m, quantity, notes, expire_date)VALUES ( '$trei', '$name_m', '$quantity', '$notes', '$date')";
+     $sql2="INSERT INTO medicins ( id_username, name_m, quantity, notes, expire_date)VALUES ( '$doi', '$name_m', '$quantity', '$notes', '$date')";
 
     if(mysqli_query($conn, $sql2)){
         echo "New record create successfuly";
@@ -52,13 +54,13 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
 <div class="register">    
     
-    <h1>Add a new medicin</h1> 
+    <h1>Add a new medicine</h1> 
 
 
         <form action="" method='POST'>
         
             <input <?php echo isset($id_username)?$id_username: '' ?> type="hidden" name="id_username" >
-            <label for="neme_m">Name medicin:</label>
+            <label for="neme_m">Name medicine:</label>
             <input <?php echo isset($name_m)?$name_m: '' ?> type="text" name="name_m" required>
     
             <label for="quantity">Quantity:</label>
@@ -78,6 +80,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
                 <p><a href="admin.php">Go to homepage</a></p>
                 <p><a href="logout.php">Logout</a></p>
             </div>
+            
                     
     
     
