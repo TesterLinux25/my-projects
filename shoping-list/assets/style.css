@@ -1,0 +1,149 @@
+/*all page */
+body {
+  background-color: rgb(106, 140, 154);
+}
+
+/*table */
+table {
+  font-family: arial, sans-serif;
+  font-size: large;
+  font-weight: 300;
+  width: 90%;
+  margin: 0% 5%;
+}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+tr {
+  background-color: rgb(243, 197, 111);
+}
+
+td,
+th {
+  border: 5px solid rgb(106, 140, 154);
+  padding: 2px 5px;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 2px 5px;
+}
+
+tr:nth-child(even) {
+  background-color: orange;
+}
+
+.result {
+  padding: 5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.output1 {
+  text-align: left;
+  padding: 8px;
+}
+.output2 {
+  text-align: center;
+  padding: auto;
+}
+.output3 {
+  text-align: center;
+  padding: auto;
+}
+
+.checkbox {
+  justify-content: center;
+  text-align: center;
+  padding: 2px;
+}
+/*inputs */
+.totalinputs {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+}
+.inputs {
+  margin-bottom: 10px;
+}
+.add {
+  margin-left: 20px;
+}
+form input[type="text"],
+button,
+select {
+  font-size: 2rem;
+  border-radius: 15px;
+}
+form button {
+  color: green;
+
+  font-weight: 600;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+form button:hover {
+  opacity: 0.8;
+}
+a {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 15px;
+}
+.edit {
+  color: black;
+}
+.edit:hover {
+  opacity: 0.8;
+  background-color: rgb(67, 108, 108);
+}
+
+.delete:hover {
+  background-color: rgb(170, 120, 120);
+}
+.home {
+  color: white;
+  font-size: 30px;
+
+  padding: 3%;
+  background-color: burlywood;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 2% 6%;
+  opacity: 80%;
+}
+.home:hover {
+  background-color: rgb(215, 225, 231);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* delete and print*/
+.deleteprint {
+  display: flex;
+  flex-direction: row;
+
+  padding: 25px;
+}
+.deleteall {
+  color: red;
+  margin-right: 2rem;
+}
+.print {
+  color: blue;
+}
+
+.delete {
+  color: red;
+  font-size: 10px;
+  font-weight: 900;
+  padding: 4px 20px;
+  border-radius: 10px;
+  border: none;
+}
+/*disabled link*/
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
