@@ -24,7 +24,11 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
     $shopping->done=0;
 
     $shopping->create();
-
+    //prevent update when page is refreshing
+    header('Location: index.php');
+    exit();
+   
+  
   }elseif(isset($_POST['checked'])){
     $shopping->complete($_POST['id']);
     
@@ -37,6 +41,7 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
   }elseif(isset($_POST['deleteall'])){
     $shopping->deleteall();
   }
+  
 }
 
 
@@ -61,7 +66,7 @@ $listll=$shopping->read();
         type="text"
         name="quantity"
         oninput="this.value=this.value.replace(/[^0-9 OR ^.]/g, '')"
-        size="5"
+        size="3"
         placeholder="QTY/Weight"
         required
       />
@@ -111,7 +116,7 @@ $listll=$shopping->read();
         </div>
           
         </td>
-        <td style="width: 50%; text-decoration:<?php echo $list['done']==1?'line-through':'none'?>" class="output1"><?php echo $list['name'] ?> </td>
+        <td style="width: 50%; text-decoration:<?php echo $list['done']==1?'line-through':'none'?>" class="output1 outputll"><?php echo $list['name'] ?> </td>
         <td style=" text-decoration:<?php echo $list['done']==1?'line-through':'none'?>" class="output2" style=''><?php echo $list['quantity'] ?></td>
         <td class="output3"><?php echo $list['um'] ?></td>
         <td><a class="edit" href="edit.php">Edit</a></td>
