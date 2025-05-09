@@ -209,3 +209,53 @@ select {
     margin: 0%;
   }
 }
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: lawngreen;
+  }
+  button {
+    font-size: 20px;
+  }
+  th {
+    font-size: 10px;
+    padding: 0%;
+    width: 10%;
+    margin: 0%;
+    width: 100;
+  }
+  td {
+    font-size: 10px;
+    padding: 0%;
+    width: 10%;
+  }
+
+  table {
+    width: 10%;
+  }
+  .result {
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .output1 {
+    text-align: left;
+    padding: 10px;
+  }
+  .output2 {
+    text-align: center;
+  }
+  .output3 {
+    text-align: center;
+  }
+  input::placeholder {
+    font-size: 20px;
+  }
+  input {
+    padding: 1px;
+    background-color: aqua;
+    width: auto;
+    margin: 0%;
+  }
+}
