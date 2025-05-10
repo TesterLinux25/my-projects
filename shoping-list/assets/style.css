@@ -162,7 +162,8 @@ select {
 }
 @media only screen and (max-width: 600px) {
   body {
-    background-color: lawngreen;
+    background-color: rgb(42, 119, 190);
+    all: none;
   }
   button {
     font-size: 20px;
@@ -211,7 +212,7 @@ select {
 }
 @media only screen and (max-width: 800px) {
   body {
-    background-color: lawngreen;
+    background-color: rgb(126, 189, 244);
   }
   button {
     font-size: 20px;

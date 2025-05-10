@@ -41,9 +41,7 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
   }elseif(isset($_POST['deleteall'])){
     $shopping->deleteall();
   }
-  
 }
-
 
 
 
@@ -72,10 +70,10 @@ $listll=$shopping->read();
       />
       <select name="um">
         <option value="qti">qty</option>
-        <option value="kilogram">kg</option>
-        <option value="grams">g</option>
-        <option value="liter">l</option>
-        <option value="mililiter">ml</option>
+        <option value="kg">kg</option>
+        <option value="g">g</option>
+        <option value="l">l</option>
+        <option value="ml">ml</option>
       </select>
       
      <button class="add" type="submit" name="add_task">+ Add</button>
@@ -143,7 +141,8 @@ $listll=$shopping->read();
    <button class="deleteall" name="deleteall" type="submit">Delete all</button>
         </form>
         
-        <form action="" method="post">
+        <form action="makepdf.php"  method="post">
+         
           <button class="print" type="submit" name="print">Print</button>
         </form>
 </div>
