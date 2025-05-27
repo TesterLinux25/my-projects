@@ -1,0 +1,14 @@
+.navbar-brand,
+.navbar-nav {
+  font-size: 25px;
+  font-weight: 600;
+}
+@media screen and (max-width: 500px) {
+  .navbar-brand,
+  .navbar-nav {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+  }
+}
